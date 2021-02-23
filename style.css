@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+}
+
+#main-title {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+    animation-name: slideDown;
+    animation-delay: 800ms;
+}
+
+#main-subtitle-1, #main-subtitle-2, #main-subtitle-3 {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+    animation-name: slideDown;
+}
+
+#main-subtitle-1 {
+    animation-delay: 1s;
+}
+
+#main-subtitle-2 {
+    animation-delay: 1.2s;
+}
+
+#main-subtitle-3 {
+    animation-delay: 1.4s;
+}
+
+.blog-border-line {
+    border-bottom: 1px solid;
+    ;
+    border-color: rgb(197, 197, 197);
+    border-width: thin;
+}
+
+.blog-links {
+    color: black;
+}
+
+/* email clicked */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Keyframes */
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
