@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
 });
 
 //Contact -> click email address
