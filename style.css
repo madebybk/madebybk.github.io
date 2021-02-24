@@ -2,6 +2,12 @@ body, html {
     height: 100%;
 }
 
+#profile-pic {
+    background-image: url(profile_pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #main-title {
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0, 0.5, 0, 1);

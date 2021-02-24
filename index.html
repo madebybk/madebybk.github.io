@@ -8,12 +8,10 @@
     <title>madebybk</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" async></script>
 </head>
 
 <body>
-    <section class="hero is-fullheight"
-        style="background-image: url(pic.jpg); background-size: cover; background-position: center;">
+    <section class="hero is-fullheight" id="profile-pic">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <nav class="navbar">
@@ -24,11 +22,11 @@
                                 <a href="index.html">madebybk</a>
                             </h1>
                         </a>
-                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                        <span class="navbar-burger" data-target="navbarMenuHeroA" aria-label="menu">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
-                        </a>
+                        </span>
                     </div>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
@@ -140,6 +138,7 @@
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 
 </html>
